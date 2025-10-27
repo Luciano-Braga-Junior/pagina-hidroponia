@@ -29,28 +29,35 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // --- Toggle de Detalhes com Animação ---
-    const botaoNft = document.getElementById('botao-toggle-nft');
-    const descricaoNft = document.getElementById('descricao-nft');
+    // --- 3. Toggle de Detalhes com Animação ---
+    const todosBotoesToggle = document.querySelectorAll('.btn-toggle');
 
-    if (botaoNft && descricaoNft) {
-        descricaoNft.style.maxHeight = '0';
-        descricaoNft.style.overflow = 'hidden';
-        descricaoNft.style.transition = 'max-height 0.5s ease-out';
-        descricaoNft.style.padding = '0 15px';
+    todosBotoesToggle.forEach(botao => {
 
-        botaoNft.addEventListener('click', function() {
-            if (descricaoNft.style.maxHeight === '0px' || descricaoNft.style.maxHeight === '') {
-                // Revela a descrição
-                descricaoNft.style.maxHeight = descricaoNft.scrollHeight + 'px';
-                botaoNft.textContent = 'Esconder Detalhes NFT';
-            } else {
-                // Esconde a descrição
-                descricaoNft.style.maxHeight = '0';
-                botaoNft.textContent = 'Mostrar Detalhes NFT';
-            }
-        });
-    }
+        const descricao = botao.nextElementSibling;
+
+        // Verifica se a descrição foi encontrada e tem a classe esperada
+        if (descricao && descricao.classList.contains('detalhes-ocultos')) {
+
+            descricao.style.maxHeight = '0';
+            descricao.style.overflow = 'hidden';
+            descricao.style.transition = 'max-height 0.5s ease-out';
+            descricao.style.padding = '0 15px';
+
+            botao.addEventListener('click', function() {
+                if (descricao.style.maxHeight === '0px' || descricao.style.maxHeight === '') {
+                    // Revela a descrição
+                    descricao.style.maxHeight = descricao.scrollHeight + 'px';
+                    botao.textContent = 'Esconder Detalhes';
+                } else {
+                    descricao.style.maxHeight = '0';
+                    botao.textContent = 'Mostrar Detalhes';
+                }
+            });
+        } else {
+            console.warn("Aviso: Botão toggle encontrado, mas o elemento seguinte não é a descrição esperada.", botao);
+        }
+    });
 
     const galeriaImagens = document.querySelectorAll('.galeria-item img');
 

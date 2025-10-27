@@ -151,7 +151,7 @@ section p {
 
 /* Hero Section (Banner principal) */
 .hero-section {
-    background: url('https://via.placeholder.com/1500x800.png?text=Fundo+Hidroponia') no-repeat center center/cover;
+    background: url('imgs/banner-principal.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 150px 0;
@@ -159,6 +159,25 @@ section p {
     align-items: center;
     justify-content: center;
     min-height: 500px;
+    position: relative;
+}
+
+/* Sobreposição escura para o Hero Section */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Garante que o conteúdo do Hero fique acima da sobreposição */
+.hero-section .container {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-section p {
