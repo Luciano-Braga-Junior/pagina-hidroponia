@@ -3,72 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tudo Sobre Hidroponia</title>
+    <title>Hidroponia - O Futuro do Cultivo Urbano</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://via.placeholder.com/32x32.png?text=🌱">
 </head>
 <body>
     <header>
-        <h1>Hidroponia: Cultivando o Futuro</h1>
-        <nav>
-            <ul>
-                <li><a href="#o-que-e">O que é?</a></li>
-                <li><a href="#vantagens">Vantagens</a></li>
-                <li><a href="#sistemas">Sistemas</a></li>
-                <li><a href="#comecar">Como Começar</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo de Hidroponia" class="header-logo">
+                <h1>Cultivando o Futuro</h1>
+            </div>
+            <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#o-que-e">O que é?</a></li>
+                    <li><a href="#vantagens">Vantagens</a></li>
+                    <li><a href="#sistemas">Sistemas</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#comecar">Como Começar</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="o-que-e">
-            <h2><a id="o-que-e"></a>O que é Hidroponia?</h2>
-            <p>Hidroponia é a técnica de cultivar plantas sem solo, utilizando soluções aquosas ricas em nutrientes minerais. As raízes das plantas recebem uma solução nutritiva balanceada, dissolvida em água, para seu desenvolvimento.</p>
-            <img src="https://via.placeholder.com/600x300.png?text=Imagem+Sistema+Hidrop%C3%B4nico" alt="Ilustração de um sistema hidropônico">
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <p>Descubra como cultivar alimentos frescos e saudáveis em casa, de forma sustentável e eficiente.</p>
+                <a href="#comecar" class="btn-cta">Comece a Cultivar Hoje!</a>
+            </div>
+        </section>
+
+        <section id="o-que-e" class="bg-light">
+            <div class="container">
+                <h2><a id="o-que-e"></a>O que é Hidroponia?</h2>
+                <p>Hidroponia é a arte de cultivar plantas sem solo, onde as raízes são imersas em uma solução nutritiva aquosa. Essa técnica inovadora permite um controle preciso sobre os nutrientes que as plantas recebem, resultando em um crescimento mais rápido e saudável, com menor consumo de água.</p>
+                <img src="https://via.placeholder.com/700x400.png?text=Hidroponia+Moderna" alt="Visão geral de um sistema hidropônico moderno">
+            </div>
         </section>
 
         <section id="vantagens">
-            <h2><a id="vantagens"></a>Vantagens da Hidroponia</h2>
-            <ul>
-                <li><strong>Economia de água:</strong> Utiliza até 90% menos água que a agricultura tradicional.</li>
-                <li><strong>Maior produtividade:</strong> Permite cultivar mais plantas em menos espaço.</li>
-                <li><strong>Menos pragas:</strong> Reduz a necessidade de pesticidas, pois não há solo.</li>
-                <li><strong>Colheita mais rápida:</strong> As plantas tendem a crescer mais rapidamente.</li>
-                <li><strong>Cultivo em qualquer lugar:</strong> Pode ser feito em áreas urbanas, estufas ou até dentro de casa.</li>
-            </ul>
-        </section>
-
-        <section id="sistemas">
-            <h2><a id="sistemas"></a>Principais Sistemas Hidropônicos</h2>
-            <div class="sistema">
-                <h3>NFT (Nutrient Film Technique)</h3>
-                <p>Neste sistema, um fluxo contínuo e raso de solução nutritiva passa pelas raízes das plantas em canais levemente inclinados.</p>
-            </div>
-            <div class="sistema">
-                <h3>DWC (Deep Water Culture)</h3>
-                <p>As raízes das plantas ficam submersas em um reservatório com a solução nutritiva aerada (oxigenada).</p>
-            </div>
-             <div class="sistema">
-                <h3>Sistema de Pavio (Wick System)</h3>
-                <p>Um sistema passivo onde a solução nutritiva é levada até as raízes por meio de um pavio, por capilaridade.</p>
+            <div class="container">
+                <h2><a id="vantagens"></a>Vantagens da Hidroponia</h2>
+                <div class="vantagens-grid">
+                    <div class="vantagem-item">
+                        <h3>💧 Economia de Água</h3>
+                        <p>Até 90% menos água que a agricultura tradicional, pois a água é reciclada no sistema.</p>
+                    </div>
+                    <div class="vantagem-item">
+                        <h3>📈 Maior Produtividade</h3>
+                        <p>Permite cultivar mais plantas em espaços menores e com ciclos de crescimento acelerados.</p>
+                    </div>
+                    <div class="vantagem-item">
+                        <h3>🛡️ Menos Pragas e Doenças</h3>
+                        <p>A ausência de solo reduz drasticamente a incidência de pragas e doenças transmitidas pelo solo.</p>
+                    </div>
+                    <div class="vantagem-item">
+                        <h3>✨ Qualidade Superior</h3>
+                        <p>Plantas mais limpas, saudáveis e com sabor aprimorado devido à nutrição otimizada.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="comecar">
-            <h2><a id="comecar"></a>Como Começar seu Cultivo Hidropônico</h2>
-            <ol>
-                <li>Escolha o sistema hidropônico adequado para seu espaço e tipo de planta.</li>
-                <li>Monte a estrutura (canais, reservatório, bomba, etc.).</li>
-                <li>Prepare a solução nutritiva seguindo as recomendações para as plantas escolhidas.</li>
-                <li>Adquira ou produza suas mudas.</li>
-                <li>Transplante as mudas para o sistema.</li>
-                <li>Monitore regularmente o pH e a condutividade elétrica (CE) da solução.</li>
-                <li>Observe o desenvolvimento das plantas e faça ajustes se necessário.</li>
-            </ol>
+        <section id="sistemas" class="bg-light">
+            <div class="container">
+                <h2><a id="sistemas"></a>Principais Sistemas Hidropônicos</h2>
+                <div class="sistemas-grid">
+                    <div class="sistema-card">
+                        <h3>NFT (Nutrient Film Technique)</h3>
+                        <p>Um fluxo contínuo e raso de solução nutritiva passa pelas raízes das plantas em canais.</p>
+                        <button id="botao-toggle-nft" class="btn-toggle">Mostrar Detalhes</button>
+                        <p id="descricao-nft" class="detalhes-ocultos">
+                            No sistema NFT, as plantas são cultivadas em canais inclinados por onde passa uma fina "película" de solução nutritiva, que irriga as raízes constantemente. É ideal para folhosas como alface, rúcula e agrião. Requer bomba d'água e reservatório.
+                        </p>
+                    </div>
+                    <div class="sistema-card">
+                        <h3>DWC (Deep Water Culture)</h3>
+                        <p>As raízes ficam submersas em um reservatório com solução nutritiva aerada.</p>
+                        <button class="btn-toggle">Mostrar Detalhes</button>
+                        <p class="detalhes-ocultos">
+                            Neste sistema, as raízes das plantas ficam totalmente imersas em uma solução nutritiva dentro de um recipiente, que é oxigenada por uma bomba de aquário. É simples, eficaz e ótimo para iniciantes, bom para plantas como alface e tomate.
+                        </p>
+                    </div>
+                    <div class="sistema-card">
+                        <h3>Sistema de Pavio (Wick System)</h3>
+                        <p>Sistema passivo onde a solução é levada por capilaridade através de um pavio.</p>
+                        <button class="btn-toggle">Mostrar Detalhes</button>
+                        <p class="detalhes-ocultos">
+                            O Wick System é um dos mais simples e passivos, não necessitando de bombas elétricas. A solução nutritiva é transportada do reservatório para a zona da raiz da planta por um pavio, aproveitando a ação capilar. Ideal para ervas e plantas menores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <div class="container">
+                <h2><a id="galeria"></a>Galeria de Hidroponia</h2>
+                <div class="galeria-grid">
+                    <div class="galeria-item">
+                        <img src="https://via.placeholder.com/300x200.png?text=Alfaces+NFT" alt="Sistema NFT cultivando alfaces">
+                        <p>Alfaces saudáveis em sistema NFT.</p>
+                    </div>
+                    <div class="galeria-item">
+                        <img src="https://via.placeholder.com/300x200.png?text=DWC+Tomates" alt="Sistema DWC cultivando tomates">
+                        <p>Tomates crescendo em DWC.</p>
+                    </div>
+                    <div class="galeria-item">
+                        <img src="https://via.placeholder.com/300x200.png?text=Mini+Jardim+Hidrop%C3%B4nico" alt="Pequeno jardim hidropônico caseiro">
+                        <p>Mini jardim hidropônico doméstico.</p>
+                    </div>
+                    <div class="galeria-item">
+                        <img src="https://via.placeholder.com/300x200.png?text=Raizes+Saudaveis" alt="Raízes de planta hidropônica">
+                        <p>Raízes fortes e brancas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comecar" class="bg-light">
+            <div class="container">
+                <h2><a id="comecar"></a>Como Começar seu Cultivo Hidropônico</h2>
+                <div class="passos-grid">
+                    <div class="passo-item">
+                        <span class="numero">1</span>
+                        <h3>Escolha o Sistema</h3>
+                        <p>Pesquise e defina qual sistema hidropônico se adapta melhor ao seu espaço e objetivos (NFT, DWC, Pavio, etc.).</p>
+                    </div>
+                    <div class="passo-item">
+                        <span class="numero">2</span>
+                        <h3>Monte a Estrutura</h3>
+                        <p>Adquira ou construa os componentes: reservatório, canos/vasos, bomba (se necessário), pedras de ar, etc.</p>
+                    </div>
+                    <div class="passo-item">
+                        <span class="numero">3</span>
+                        <h3>Prepare a Solução</h3>
+                        <p>Utilize nutrientes específicos para hidroponia e prepare a solução conforme as instruções e necessidades das suas plantas.</p>
+                    </div>
+                    <div class="passo-item">
+                        <span class="numero">4</span>
+                        <h3>Plante Suas Mudas</h3>
+                        <p>Transfira as mudas (germinadas em substratos inertes como lã de rocha) para o sistema.</p>
+                    </div>
+                    <div class="passo-item">
+                        <span class="numero">5</span>
+                        <h3>Monitore e Mantenha</h3>
+                        <p>Verifique regularmente o pH, a condutividade elétrica (CE) da solução e o nível da água. Faça as reposições e ajustes necessários.</p>
+                    </div>
+                    <div class="passo-item">
+                        <span class="numero">6</span>
+                        <h3>Colha e Desfrute!</h3>
+                        <p>Com o devido cuidado, suas plantas crescerão saudáveis e estarão prontas para a colheita em pouco tempo.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Sua Página de Hidroponia. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; 2025 Hidroponia Fácil. Todos os direitos reservados.</p>
+            <p>Criado com 🌱 paixão pelo cultivo.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
