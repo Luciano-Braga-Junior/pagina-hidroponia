@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         botaoNft.addEventListener('click', function() {
             if (descricaoNft.style.maxHeight === '0px' || descricaoNft.style.maxHeight === '') {
                 // Revela a descrição
-                descricaoNft.style.maxHeight = descricaoNft.scrollHeight + 'px'; // Ajusta a altura para o conteúdo
+                descricaoNft.style.maxHeight = descricaoNft.scrollHeight + 'px';
                 botaoNft.textContent = 'Esconder Detalhes NFT';
             } else {
                 // Esconde a descrição
